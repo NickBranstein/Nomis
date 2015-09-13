@@ -1,0 +1,30 @@
+@keyframes flash {
+	from {background-color: black;}
+	to {background-color: red;}
+}
+      
+@keyframes story {
+	80% {width: 600px;}
+	100% {transform: rotateX(360deg); width: 600px;}
+}
+
+.flash {
+animation: flash .5s 5 alternate;
+}
+
+.story {
+animation: story 5s forwards;
+}
+
+p {
+color: #fff;
+font: 14px Wawati SC; 
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+width: 0;
+z-index: 100;
+top: 50px;
+transform: rotateX(180deg);
+position: relative;
+}
